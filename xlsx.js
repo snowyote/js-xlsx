@@ -8771,6 +8771,7 @@ function parse_xlml_xml(d, opts) {
 			else state.push([Rn[3], false]);
 			break;
 
+		case 'PhoneticText':
 		case 'Comment':
 			if(Rn[1]==='/'){
 				if((tmp=state.pop())[0]!==Rn[3]) throw "Bad state: "+tmp;
